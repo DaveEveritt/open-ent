@@ -10,6 +10,7 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
+  font-size: 0.87em;
 }
 header h1 {
   margin: 0;
@@ -47,6 +48,8 @@ nav a:hover {
 main {
   padding: 1em;
   font-size: 1.25em;
+  max-width: 1190px;
+  margin: 0 auto;
 }
 main h1 {
   margin-top: 0;
@@ -74,6 +77,10 @@ footer address:last-child {
 
 /* content styles */
 
+.slides {
+  max-width: 1190px;
+  margin: 0 auto;
+}
 .slides img {
   width: 100%;
 }

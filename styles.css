@@ -4,27 +4,30 @@ body {
   font-family: 'Roboto Condensed', helvetica, sans-serif;
   margin: 0;
 }
-header {
+
+/* header and main menu */
+header.cei {
   background: #556;
   color: #fff;
   text-align: center;
   position: sticky;
   top: 0;
   font-size: 0.87em;
+  z-index: 60000;
 }
-header h1 {
+header.cei h1 {
   margin: 0;
 }
-nav {
+.cei nav {
   display: flex;
   width: 100%;
 }
-header h1,
-nav a {
+header.cei h1,
+.cei nav a {
   font-size: 1.25em;
-  line-height: 2.25em;
+  line-height: 2em;
 }
-nav a {
+.cei nav a {
   display: inline-block;
   background: #ddd;
   color: #595;
@@ -35,16 +38,17 @@ nav a {
   border-left: 2px solid #556;
   transition: all .6s;
 }
-nav a:first-child {
+.cei nav a:first-child {
   color: #955;
 }
-nav a:last-child {
+.cei nav a:last-child {
   color: #559;
 }
-nav a:hover {
+.cei nav a:hover {
   background: #eee;
   color: #445;
 }
+
 main {
   padding: 1em;
   font-size: 1.25em;
@@ -58,25 +62,8 @@ main aside {
   width: 90%;
   margin: 0 auto;
 }
-footer {
-  padding: 1em;
-  background: #556;
-  color: #fff;
-  line-height: 1.75em;
-}
-footer a {
-  text-decoration: none;
-  color: inherit;
-}
-footer address {
-  font-style: normal;
-}
-footer address:last-child {
-  text-align: right;
-}
 
 /* content styles */
-
 .slides {
   max-width: 1190px;
   margin: 0 auto;
@@ -88,31 +75,48 @@ main dt {
   font-weight: bold;
 }
 
+/* footer */
+footer.cei {
+  padding: 1em;
+  background: #556;
+  color: #fff;
+  line-height: 1.75em;
+}
+footer.cei a {
+  text-decoration: none;
+  color: inherit;
+}
+footer.cei address {
+  font-style: normal;
+}
+footer.cei address:last-child {
+  text-align: right;
+}
+
 /* MEDIA QUERIES */
 
 @media (min-width: 480px) {
-  footer {
+  footer.cei {
     display: flex;
     justify-content: space-between;
   }
-  footer address:last-child {
+  footer.cei address:last-child {
     text-align: right;
   }
-  header h1,
-  nav a {
-    font-size: 1.5em;
-    line-height: 2.5em;
+  main aside {
+    width: 90%;
+    max-width: 500px;
+    margin: 1em auto;
   }
-
 }
 
-@media (min-width: 900px) {
-  header {
+@media (min-width: 860px) {
+  header.cei {
     display: flex;
     justify-content: space-between;
     padding-left: 1em;
   }
-  nav {
+  .cei nav {
     width: 40%;
   }
   main {
@@ -125,8 +129,8 @@ main dt {
 }
 
 @media (min-width: 1090px) {
-  header h1,
-  nav a {
-    font-size: 2em;
+  header.cei h1,
+  .cei nav a {
+    font-size: 1.75em;
   } 
 }

@@ -128,8 +128,6 @@ footer.cei address:last-child {
     text-align: right;
   }
   main aside {
-    width: 90%;
-    max-width: 500px;
     margin: 1em auto;
   }
   /* text hover states all above mobile size */
@@ -159,8 +157,8 @@ footer.cei address:last-child {
     display: flex;
   }  
   main aside {
-    width: 600px;
-    margin-left: 1em;
+    min-width: 230px;
+    margin: 0 0 0 2em;
   }
 }
 
@@ -168,5 +166,5 @@ footer.cei address:last-child {
   header.cei h1,
   .cei nav a {
     font-size: 1.75em;
-  } 
+  }
 }

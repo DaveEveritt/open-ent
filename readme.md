@@ -6,3 +6,8 @@ The header and footer styles and markup are designed to be independent, and adde
 
 - the CKAN open data portal [https://data.open-ent.com](data.open-ent.com)
 - the open data discussion group [https://forum.open-ent.com](forum.open-ent.com)
+
+## TODO
+
+- [ ] consistent layout look & as DMU CEI homepage
+- [ ] text size and font as DMU CEI homepage

@@ -12,6 +12,6 @@ The header and footer styles and markup are designed to be independent, and adde
 - [x] smarten up page design
 - [x] include DMU logo
 - [x] reduce plasma graphic size to sharpen image
-- [ ] abstract header and footer CSS
+- [x] abstract header and footer CSS
 - [ ] consistent layout look & as DMU CEI homepage
 - [ ] text size and font as DMU CEI homepage

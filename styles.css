@@ -5,6 +5,23 @@ body {
   margin: 0;
 }
 
+/* vertical spacing utilities */
+.no-margin {
+  margin: 0;
+}
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+.no-top-margin {
+  margin-top: 0;
+}
+.small-top-margin {
+  margin-top: .5em;
+}
+.small-bottom-margin {
+  margin-bottom: .5em;
+}
+
 /* header and main menu */
 header.cei {
   background: #556;
@@ -76,6 +93,11 @@ section a:link,
 section a:visited {
   color: #556;
 }
+.ruleabove {
+  border-top: .2em solid #ccd;
+  margin-top: 0;
+  padding-top: .05;
+}
 
 /* footer */
 footer.cei {
@@ -126,11 +148,18 @@ footer.cei address:last-child {
   .cei nav {
     width: 40%;
   }
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  .columns section {
+    width: 48%;
+  }
   main {
     display: flex;
   }  
   main aside {
-    width: 570px;
+    width: 600px;
     margin-left: 1em;
   }
 }

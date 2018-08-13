@@ -1,7 +1,6 @@
 body {
   background: #eee;
   color: #445;
-  font-family: 'Roboto Condensed', Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -36,34 +35,47 @@ body {
 /* main content styles */
 main {
   padding: 1em;
-  font-size: 1.25em;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
   max-width: 1190px;
   margin: 0 auto;
-}
-main h1 {
-  margin-top: 0;
 }
 main aside {
   width: 90%;
   margin: 0 auto;
+}
+section h1 {
+  font-size: 1.75em;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 section a:link,
 section a:visited {
   color: #556;
 }
 .ruleabove {
-  border-top: .2em solid #ccd;
-  margin-top: 0;
-  padding-top: .05;
+  border-top: .43em solid #fff;
+  margin-top: 1.5em;
+  padding-top: 1em;
+}
+.columns {
+  font-size: .75em;
+}
+.columns h2 {
+  font-weight: normal;
+  background: #fff;
+  padding: .5em .25em;
+}
+.columns p {
+  line-height: 1.5em;
 }
 
-
 /* MEDIA QUERIES */
+/* HEADER and FOOTER media queries in header-footer.css */
 
 @media (min-width: 480px) {
-
-  /* FOOTER styles in header-footer.css */
-
+  main {
+    font-size: 1.25em;
+  }
   main aside {
     margin: 1em auto;
   }
@@ -75,9 +87,6 @@ section a:visited {
 }
 
 @media (min-width: 860px) {
-
-  /* HEADER styles in header-footer.css */
-
   .columns {
     display: flex;
     justify-content: space-between;
